@@ -7,8 +7,19 @@
 </head>
 <body>
 
-    <button onclick="AdicionarCarro()">Adicionar Carro</button>
-    <span id="listaDeCarros"></span>
+    <h2>Adicionar um carro à lista de carros</h2>
+
+    <input type="text" id="inputPlaca" placeholder="Digite a placa do carro">
+    <input type="text" id="inputModelo" placeholder="Digite o modelo do carro">
+    <input type="text" id="inputMarca" placeholder="Digite a marca do carro">
+    <input type="number" id="inputAno" placeholder="Digite o ano do carro">
+
+
+    <button onclick="adicionarCarroNaLista()">Adicionar Carro</button>
+    <button onclick="MostrarListaDeCarros()">Mostrar Lista</button>
+
+    <h3>Carros (vetor heterogêneo):</h3>
+    <p id="listaDeCarros">[]</p>
 
     <script src="carro.js"></script>
     <script src="carroController.js"></script>
