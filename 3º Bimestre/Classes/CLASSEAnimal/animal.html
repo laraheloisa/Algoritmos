@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animais lista</title>
+</head>
+<body>
+
+    <h2>Adicionar Animal</h2>
+
+    <input type="number" id="inputID" placeholder="Digite o Id">
+    <input type="text" id="inputNOME" placeholder="Digite o nome">
+    <input type="text" id="inputRACA" placeholder="Digite a raça">
+    <input type="date" id="inputDATA" placeholder="Digite a data de nascimento">
+    <input type="text" id="inputTUTOR" placeholder="Digite o tutor(a)">
+
+    <button onclick="adicionarALista()">Adicionar Animal</button>
+    <button onclick="mostrarAnimais()">Mostrar na Lista</button>
+    
+    <h3>Animais (vetor heterogêneo):</h3>
+    <p id="listaDeAnimais">[]</p>
+
+    <script src="animal.js"></script>
+    <script src="animalController.js"></script>
+
+
+</body>
+</html>

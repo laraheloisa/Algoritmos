@@ -11,9 +11,9 @@ listaPessoas.push(pessoa);
 
 function listarPessoas(){
     let listagemPessoas = '';
-    for(i = 0; i<listaPessoas,length;i++){
+    for(let i = 0; i<listaPessoas.length; i++){
         let pessoaAtual = listaPessoas[i];
-        listaPessoas += pessoaAtual.nome + '-' + pessoaAtual.cpf + '-' + pessoaAtual.dataNascimento + '<br>';
+        listagemPessoas += pessoaAtual.nome + '-' + pessoaAtual.cpf + '-' + pessoaAtual.dataNascimento + '<br>';
 
     }
     document.getElementById('pessoas').innerHTML = listagemPessoas;
